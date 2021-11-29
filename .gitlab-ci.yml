@@ -1,3 +1,17 @@
+stages:
+  - build
+  - inspect
+  - test
+  - scan
+  - publish
+  - buildImage
+  - scanImage
+  - publishImage
+  - devDeploy
+  - testDeploy
+  - verify
+  - prodDeploy
+  
 include:   
   - project: 'gitlab-samples/templates'
     ref: main
