@@ -1,0 +1,6 @@
+include:   
+  - project: 'gitlab-samples/templates'
+    ref: main
+    file: '/maven-workflow.yaml'
+variables:
+  JAVA_VERSION: 11
