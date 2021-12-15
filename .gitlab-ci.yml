@@ -1,3 +1,9 @@
+
+include:   
+  - project: 'gitlab-samples/templates'
+    ref: main
+    file: '/maven-workflow.yaml'
+
 stages:
   - demo
   - build
@@ -12,14 +18,8 @@ stages:
   - testDeploy
   - verify
   - prodDeploy
-  
-include:   
-  - project: 'gitlab-samples/templates'
-    ref: main
-    file: '/maven-workflow.yaml'
-variables:
-  JAVA_VERSION: 11
 
+#Include any custom tasks
 mynewjob:
   stage: demo
   script: echo "demo"
